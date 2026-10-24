@@ -2,9 +2,9 @@ import NewsList from '@/components/news-list';
 import { getLatestNews } from '@/news'
 import React from 'react'
 
-const LatestPage = () => {
+const LatestPage = async () => {
 
-  const latestNews = getLatestNews();
+  const latestNews = await getLatestNews();
 
   return (
     <div>
